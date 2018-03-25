@@ -4,7 +4,7 @@ from django.utils import timezone
 '''defines model object that will be eventually added to database with
 properties defined below as column headings.'''
 class Post(models.Model):
-    arthor = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
